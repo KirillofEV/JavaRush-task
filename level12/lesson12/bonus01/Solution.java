@@ -18,7 +18,7 @@ public class Solution
         public abstract void fly();
     }
 
-    public static abstract class Horse
+    public static class Horse
     {
         public void run()
         {
@@ -28,15 +28,15 @@ public class Solution
 
     public static class Pegas extends Horse implements Fly
     {
-        public abstract void fly()
+        public void fly()
         {
 
         }
     }
 
-    public static class SwimPegas extends Pegas
+    public static abstract class SwimPegas extends Pegas
     {
-        public void swim();
+        public abstract void swim();
     }
 
 }
